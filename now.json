@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "name": "stencil-now",
+  "builds": [
+    {
+      "src": "index.js",
+      "use": "@now/node@canary"
+    },
+    {
+      "src": "package.json",
+      "use": "@now/static-build",
+      "config": { "distDir": "www" }
+    }
+  ]
+}
